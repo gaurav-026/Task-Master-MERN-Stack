@@ -7,7 +7,7 @@ const Completedtask = () => {
   const { completedTask, setCompletedTask } = useContext(AppContext);
   const handleDeleteCompletedTask = async (id) => {
     // console.log("Database delete task id is:", id);
-    const response = await fetch(`http://localhost:4000/api/v1/deleteTask/${id}`, {method: "DELETE"});
+    const response = await fetch(`https://task-master-mern-stack.onrender.com/api/v1/deleteTask/${id}`, {method: "DELETE"});
     const result = await response.json();
     // console.log("Task Deleted Successfully");
     // setData(prevTasks => prevTasks.filter(task => task._id !== id));

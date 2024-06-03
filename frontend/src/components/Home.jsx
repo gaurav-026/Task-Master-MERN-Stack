@@ -37,7 +37,7 @@ const Home = () => {
 
 
   const addNewTask = async (data)=>{
-    const response = await fetch(`http://localhost:4000/api/v1/addNewTask`, 
+    const response = await fetch(`https://task-master-mern-stack.onrender.com/api/v1/addNewTask`, 
     { 
       method: "POST",
       headers: {

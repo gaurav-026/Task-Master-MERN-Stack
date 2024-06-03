@@ -19,7 +19,7 @@ function AppContextProvider({ children }) {
     //Fetch All the DAta from the database
     const fetchTasks = async () => {
         setLoading(true);
-        const response = await fetch(`http://localhost:4000/api/v1/getAllTasks`,
+        const response = await fetch(`https://task-master-mern-stack.onrender.com/api/v1/getAllTasks`,
         {
             method: "GET",
             headers: {

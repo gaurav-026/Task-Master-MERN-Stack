@@ -21,7 +21,7 @@ const Task = () => {
 
   const taskCompleted = async (object, id) => {
     // console.log("Database completed task id is:", id);
-    const response = await fetch(`http://localhost:4000/api/v1/completedTask/${id}`,
+    const response = await fetch(`https://task-master-mern-stack.onrender.com/api/v1/completedTask/${id}`,
     { 
       method: "POST",
       headers: {
@@ -45,7 +45,7 @@ const Task = () => {
   const handleDelete = async (id) => {
 
     // console.log("Database delete task id is:", id);
-    const response = await fetch(`http://localhost:4000/api/v1/deleteTask/${id}`, {method: "DELETE"});
+    const response = await fetch(`https://task-master-mern-stack.onrender.com/api/v1/deleteTask/${id}`, {method: "DELETE"});
     const result = await response.json();
     // console.log("Task Deleted Successfully");
     setData(prevTasks => prevTasks.filter(task => task._id !== id));
@@ -65,7 +65,7 @@ const Task = () => {
     const id = editTaskId;
     const object = {task: editedTask, mark: editedMark};
     // console.log("This is edit task id", editTaskId, editedTask, editedMark);
-    const response = await fetch(`http://localhost:4000/api/v1/updateTask/${id}`,
+    const response = await fetch(`https://task-master-mern-stack.onrender.com/api/v1/updateTask/${id}`,
     { 
       method: "PUT",
       headers: {
