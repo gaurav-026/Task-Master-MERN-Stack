@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+10&family=Jersey+25&display=swap');
+
+.footer {
+    font-size: 12px;
+    margin: 32px 16px 16px 16px;
+
+    /* width: 100%; */
+    /* position: fixed;
+    bottom: 0; */
+    display: flex;
+    justify-content: center;
+    bottom: auto;
+    /* position: ; */
+}

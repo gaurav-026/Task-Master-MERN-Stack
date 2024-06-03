@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap');
+
+.logo {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    /* text-decoration: none;
+    outline: none; */
+
+}
+
+.navlink {
+    text-decoration: none;
+}
+
+.header {
+    /* background: var(--blue, #2075F3); */
+    background: linear-gradient(to top, #0009fb 0%, #005bea 100%);
+    height: 60px;
+
+}
+
+.header-container {
+    margin-left: 4vw;
+}

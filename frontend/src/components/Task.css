@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+10&family=Jersey+25&display=swap');
+
+
+.task-card {
+    display: flex;
+    width: 90vw;
+    /* height: 80px; */
+    padding: 12px 30px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 6px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    border: 0.75px solid rgba(0, 0, 0, 0.05);
+    background: #FEFEFE;
+    margin: 6px auto 6px auto;
+}
+
+
+.task {
+
+    font-size: 18px;
+    margin-bottom: 4px;
+    
+}
+.task-role {
+
+    font-size: 14px;
+    margin-bottom: 4px;
+
+}
+
+
+
+.donebtn {
+    display: flex;
+    padding: 4px 12px;
+    align-items: center;
+    gap: 3px;
+    border-radius: 8px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+
+    &:hover {
+        background-color: var(--White, #f7f7f7);
+    }
+}
+
+.dot {
+    fill: #1CFE17;
+}
+
+.dot2 {
+    fill: #fd0101;
+}
+
+.delete {
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+
+    &:hover {
+        background-color: #2075F3;
+    }
+}
+
+.deleteicon {
+    width: 20px;
+    height: 20px;
+    color: #2075F3;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.buttons-spacing {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 600) {
+    .task-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        color: #000;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 40vw;
+
+
+    }
+
+}
+
+@media screen and (max-width: 600) {
+    .task-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        color: #000;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 80vw;
+
+    }
+}
+
+
+
+.successicon {
+    width: 20px;
+    height: 20px;
+    color: #1CFE17;
+}
+
+.dummy-text {
+    display: flex;
+    justify-content: center;
+}
